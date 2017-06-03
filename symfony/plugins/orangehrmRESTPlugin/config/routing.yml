@@ -123,3 +123,9 @@ api_user_login:
   param: { module:apiv1admin, action:UserLoginApi }
   requirements:
      sf_method: [post]
+
+api_kpis:
+  url: /api/v1/kpis
+  param: { module:apiv1performance, action:KpiApi }
+  requirements:
+    sf_method: [get]
