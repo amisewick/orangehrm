@@ -129,3 +129,16 @@ api_kpis:
   param: { module:apiv1performance, action:KpiApi }
   requirements:
     sf_method: [get]
+
+api_performance_reviews:
+  url: /api/v1/performance_reviews
+  param: { module:apiv1performance, action:PerformanceReviewApi }
+  requirements:
+    sf_method: [get]
+
+api_employee_performance_details:
+  url: /api/v1/employee/:id/performance_reviews
+  param: { module:apiv1performance, action:PerformanceReviewApi }
+  requirements:
+    id: \d+
+    sf_method: [get]
