@@ -148,7 +148,7 @@ class Kpi implements Serializable
 
     public function build(\Kpi $kpi){
 
-        $this->getId($kpi->getId());
+        $this->setId($kpi->getId());
         $this->setJobTitleCode($kpi->getJobTitle());
         $this->setKpi($kpi->getKpiIndicators());
         $this->setMinRating($kpi->getMinRating());
